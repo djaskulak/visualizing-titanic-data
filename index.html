@@ -7,10 +7,53 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div class="intro">
+      <h1>Titanic Data Visualization</h1>
+      <h3>
+        The Titanic was supposed to be a grand, luxerious ship, but met its fate to an iceburg.
+        While still a big part of history, we are able to look at the data of the people who 
+        bought tickets to come aboard the ship and their demographics. 
+      </h3>
+    </div> 
+    <!--end of intro-->
+
+    <div class="key">
+      <h3>Key:</h3>
+    </div>
+    <!--end of key-->
 
     <div id="titanic">
       <!-- passengers -->
     </div>
+    <!--end of data visualization-->
+
+    <div class="buttons">
+      <div class="visualize">
+        <h3>Visualize: </h3>
+
+        <div class="buttons">
+          <button id="button-gender">Gender</button>
+          <button id="button-embarked">Embarked</button>
+          <button id="button-survived">Survived</button>
+        </div>
+        <!--end of buttons-->
+      </div>
+      <!--end of visualize buttons-->
+      <div class="sort">
+        <h3>Sort: </h3>
+
+        <div class="buttons">
+          <button id="button-sort-gender">Gender</button>
+          <button id="button-sort-survived">Survived</button>
+          <button id="button-sort-embarked">Embarked</button>
+          <button id="button-sort-fare">Fare</button>
+          <button id="button-sort-id">Passenger ID</button>
+        </div>
+        <!--end of buttons-->
+      </div>
+      <!--end of sort buttons-->
+    </div>
+    <!--end of buttons-->
 
     <script src="scripts.js" type="module"></script>
   </body>
