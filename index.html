@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width">
     <title>Titanic Data Visualization</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <!--Google Fonts API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="intro">
@@ -17,43 +22,48 @@
     </div> 
     <!--end of intro-->
 
-    <div class="key">
-      <h3>Key:</h3>
-    </div>
-    <!--end of key-->
-
-    <div id="titanic">
-      <!-- passengers -->
-    </div>
-    <!--end of data visualization-->
-
-    <div class="buttons">
-      <div class="visualize">
-        <h3>Visualize: </h3>
-
-        <div class="buttons">
-          <button id="button-gender">Gender</button>
-          <button id="button-embarked">Embarked</button>
-          <button id="button-survived">Survived</button>
-        </div>
-        <!--end of buttons-->
+    <div class="main">
+      <div class="key">
+        <h3>Key:</h3>
       </div>
-      <!--end of visualize buttons-->
-      <div class="sort">
-        <h3>Sort: </h3>
+      <!--end of key-->
 
-        <div class="buttons">
-          <button id="button-sort-gender">Gender</button>
-          <button id="button-sort-survived">Survived</button>
-          <button id="button-sort-embarked">Embarked</button>
-          <button id="button-sort-fare">Fare</button>
-          <button id="button-sort-id">Passenger ID</button>
-        </div>
-        <!--end of buttons-->
+      <div id="titanic" class="content">
+        <!-- passengers -->
       </div>
-      <!--end of sort buttons-->
+      <!--end of data visualization-->
+
+      <div class="button-section">
+        <div class="visualize">
+          <h3>Visualize: </h3>
+
+          <div class="buttons">
+            <button id="button-gender">Gender</button>
+            <button id="button-embarked">Embarked</button>
+            <button id="button-survived">Survived</button>
+          </div>
+          <!--end of buttons-->
+        </div>
+        <!--end of visualize buttons-->
+        <div class="sort">
+          <h3>Sort: </h3>
+
+          <div class="buttons">
+            <button id="button-sort-gender">Gender</button>
+            <button id="button-sort-survived">Survived</button>
+            <button id="button-sort-embarked">Embarked</button>
+            <button id="button-sort-fare">Fare</button>
+            <button id="button-sort-id">Passenger ID</button>
+          </div>
+          <!--end of buttons-->
+        </div>
+        <!--end of sort buttons-->
+      </div>
+      <!--end of buttons-->
     </div>
-    <!--end of buttons-->
+    <div id="overlay">
+        
+    </div>
 
     <script src="scripts.js" type="module"></script>
   </body>

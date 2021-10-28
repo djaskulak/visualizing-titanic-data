@@ -6,7 +6,7 @@ const titanic = document.querySelector('#titanic')
 // Set some styles on the titanic
 // display flex, justifyContent center, alignItems flex-end
 titanic.style.display = 'grid'
-titanic.style.gridTemplateColumns = 'repeat(20, 10px)'
+titanic.style.gridTemplateColumns = 'repeat(50, 20px)'
 titanic.style.gridGap = '1px'
 
 // Map over the data and make a new element for each passenger
@@ -18,36 +18,18 @@ const passengers = data.map(p => {
 
 // Let's loop over each passenger and set some styles 
 passengers.forEach((p, i) => {
-  const { pclass, survived } = data[i].fields
-  p.style.width = '10px'
-  p.style.height = '10px'
+  const { pclass, survived, sex, embarked } = data[i].fields
+  p.style.width = '20px'
+  p.style.height = '20px'
+
+  //survived styles
   p.style.opacity = survived === 'Yes' ? '100%' : '50%' 
-  p.style.backgroundColor = '#000'
+  p.style.backgroundColor = '#eee'
+
+  //gender styles
+  p.style.borderRadius = sex === 'female' ? '50%' : '0%'
+
+  //embarked styles
+  p.style.backgroundColor = (embarked === 'S') ? ('#cdb4db') : ((embarked === 'C') ? ('#ffafcc') : ('#a2d2ff'))
 })
 
-// Challenges - 
-
-// Make the squares a little bigger 15px by 15px. 
-// You'll need to change both the gridTemplateColumn on the
-// titanic and the width and height of each passenger. 
-
-
-
-// Change the number of columns on the titanic to 34
-
-
-// Display each passenger as a circle if they are female. 
-// Do this by setting the borderRadius of each passenger. 
-// Match the passenger in passengers to the object data 
-// in the data array by the index. 
-
-
-
-// Display each passengers who did not survive as 
-// opacity 0.5. 
-
-
-
-// Set the backgroundColor of each passenger by their 
-// embarked value. There are three possible values: 
-// 'S', 'C', and 'Q'

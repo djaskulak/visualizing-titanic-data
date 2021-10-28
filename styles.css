@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./blacksea.jpeg");
+  color: white;
+
+  font-family: 'Crimson Text', serif;
+}
+
+.intro {
+  text-align: center;
+  margin: auto 50px auto 50px;
+}
+
+.main {
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key, .visualize, .sort {
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+#overlay {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+#overlay::first-line {
+  font-size: 1.25em;
+}
+
+#overlay span {
+  font-weight: bold;
+}
