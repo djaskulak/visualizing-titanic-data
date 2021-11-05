@@ -145,10 +145,14 @@ function displayByGender() {
 }
 
 function displayByEmbarked() {
-  passengers.forEach((p, i) => {
-    const { embarked } = data[i].fields
-    p.style.backgroundColor = (embarked === 'S') ? ('#cdb4db') : ((embarked === 'C') ? ('#ffafcc') : ('#a2d2ff'))
-  })
+  if (showEmbarked) {
+    passengers.forEach((p, i) => {
+      const { embarked } = data[i].fields
+      p.style.backgroundColor = (embarked === 'S') ? ('#cdb4db') : ((embarked === 'C') ? ('#ffafcc') : ('#a2d2ff'))
+    })
+  } else {
+    p.style.backgroundColor = '#eee'
+  }
 }
 
 function displaySurvived() {
@@ -161,3 +165,6 @@ function displaySurvived() {
     }
   })
 }
+
+/*------------------------------Displaying the Overlay---------------------------------*/
+const overlay = document.querySelector("#overlay")
