@@ -168,3 +168,9 @@ function displaySurvived() {
 
 /*------------------------------Displaying the Overlay---------------------------------*/
 const overlay = document.querySelector("#overlay")
+
+document.body.addEventListener('mouseover', (e) => {
+  if (e.target) {
+    
+  }
+})
