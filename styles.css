@@ -61,6 +61,11 @@ body {
   margin: 3px;
 }
 
+.button-selected {
+  background-color: black;
+  color: white;
+}
+
 #overlay {
   position: absolute;
   border: 1px solid;
